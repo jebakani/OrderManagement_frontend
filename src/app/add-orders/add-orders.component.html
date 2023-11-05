@@ -1,0 +1,18 @@
+<div >
+     <div>Order Details</div>
+     <div>
+     </div>
+     <form  [formGroup]="orderForm">
+        <div>
+            <label for="fname">Order Number</label><br>
+            <input type="text" id="fname" name="fname"  formControlName="orderNumber" ><br>
+        </div>
+        <label for="lname">Vendor Id</label><br>
+        <input type="text" id="lname" name="lname"  formControlName="vendorId"><br><br>
+        <label for="lname">Shop Id</label><br>
+        <input type="text" id="lname" name="lname"  formControlName="shopId"><br><br>
+        <label for="lname">Order Date</label><br>
+        <input type="date" id="lname" name="lname"  formControlName="orderDate"><br><br>
+        <button (click)="submit(orderForm.value)">Submit</button>
+     </form>
+</div>
